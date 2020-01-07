@@ -23,12 +23,19 @@ module.exports = {
     },
     variantes : {
       alignItems: ['responsivo', 'focalizado', 'foco'],
+      alignSelf: ['responsive', 'hover', 'focus'],
+      alignContent: ['responsive', 'hover', 'focus'],
+      borderRadius: ['responsive', 'hover', 'focus'],
+      boxShadow: ['responsivo', 'pairar', 'foco', 'ativo', 'grupo-pairar'],
       opacidade: ['responsivo', 'pairar', 'foco', 'ativo', 'grupo-pairar'],
-      boxShadow: ['responsivo', 'pairar', 'foco', 'ativo', 'grupo-pairar']
+      width: ['responsive', 'hover', 'focus'],
+      display: ['responsive', 'hover', 'focus'],
+      maxHeight: ['responsive', 'hover', 'focus']
     },
     corePlugins : {
       alignItems: false,
-      boxShadow: false
+      boxShadow: false,
+      maxHeight: false
     },
     colors: {
       primary: {
@@ -57,6 +64,41 @@ module.exports = {
         '80': '0,8',
         '90': '0,9',
         '100': '1',
+      },
+      spacing: {
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
+        sm: '8px',
+        md: '16px',
+        lg: '24px',
+        xl: '48px',
+      },
+      width: {
+        '1/7': '14.2857143%',
+        '2/7': '28.5714286%',
+        '3/7': '42.8571429%',
+        '4/7': '57.1428571%',
+        '5/7': '71.4285714%',
+        '6/7': '85.7142857%',
+      },
+      height: {
+        sm: '8px',
+        md: '16px',
+        lg: '24px',
+        xl: '48px',
+      },
+      borderRadius: {
+        'none': '0',
+        'default': '4px',
+        'large': '12px',
+      },
+      maxHeight: {
+        '0': '0',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        'full': '100%',
       },
     },
     extend: {
